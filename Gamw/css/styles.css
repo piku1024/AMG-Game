@@ -1,0 +1,813 @@
+/* google fonts*/
+
+@import url('https://fonts.googleapis.com/css?family=Aclonica|Galdeano|Gugi|Lemon|Press+Start+2P');
+@import url('https://fonts.googleapis.com/css?family=Audiowide');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --gal: 'Galdeano', sans-serif;
+    --gug: 'Gugi', cursive;
+    --best: "Audiowide", cursive;
+    --pix: 'Press Start 2P', cursive;
+    --alc: 'Aclonica', sans-serif;
+    --lem: 'Lemon', cursive;
+    --rob: 'Roboto', sans-serif;
+    --bakcol: linear-gradient(to bottom, #ff0000, #ffa600);
+    --bakcol2: linear-gradient(to bottom, #2f71ff, #00eeff);
+}
+
+
+
+.container-fluid {
+
+    height: 98vh;
+    background-image: var(--bakcol);
+}
+
+.btn-lg {
+
+    background-image: var(--bakcol2);
+    color: rgb(0, 0, 0);
+    border: 2px solid white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    -webkit-transition-duration: 0.4s;
+    font-family: var(--pix);
+    transition-duration: 0.8s;
+    font-size: 16px;
+    margin-top: 22%;
+}
+
+.btn-lg:hover {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 16px 16px 80px 80px rgba(255, 255, 255, 0.24), 16px 16px 80px 80px rgba(255, 255, 255, 0.19);
+    /* Green */
+    color: rgb(255, 255, 255);
+}
+
+
+/* -------------------------- P   ---------------A--------------G---------------E------------1-----------------------xxxxxxxxxxxx*/
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.sect {
+    margin-top: -10vh;
+
+    background: url(../Assets/backg/thegreatwar.png);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 110vh;
+    overflow: hidden;
+
+}
+
+
+
+audio {
+    position: absolute;
+    display: none;
+}
+
+.butt {
+    margin-top: -40vh;
+    text-align: center;
+    cursor: pointer;
+}
+
+.chor {
+    margin-top: 35vh;
+
+}
+
+
+/*---------------typwiter-----xxxxxxxxxxx---------effects-----------*/
+
+.css-typing p {
+    font-family: var(--rob);
+    color: antiquewhite;
+    font-size: 24px;
+    width: 96%;
+
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-animation: type 2s steps(40, end);
+    animation: type 2s steps(40, end);
+    border-right: .15em solid rgba(233, 162, 30, 0);
+}
+
+.css-typing p:nth-child(1) {
+    background-color: #444d53a8;
+    font-family: var(--pix);
+    font-size: 34px;
+
+}
+
+.css-typing p:nth-child(2) {
+    white-space: nowrap;
+    overflow: hidden;
+    opacity: 0;
+    -webkit-animation: type 2s steps(40, end);
+    animation: type2 2s steps(40, end);
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.css-typing p:nth-child(3) {
+    white-space: nowrap;
+    overflow: hidden;
+    opacity: 0;
+    -webkit-animation: type 2s steps(40, end);
+    animation: type2 2s steps(40, end);
+    -webkit-animation-delay: 4s;
+    animation-delay: 4s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.css-typing p:nth-child(4) {
+    white-space: nowrap;
+    overflow: hidden;
+    opacity: 0;
+    -webkit-animation: type 2s steps(40, end);
+    animation: type2 2s steps(40, end);
+    -webkit-animation-delay: 6s;
+    animation-delay: 6s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.css-typing p:nth-child(5) {
+    white-space: nowrap;
+    overflow: hidden;
+    opacity: 0;
+    -webkit-animation: type 2s steps(40, end);
+    animation: type2 2s steps(40, end);
+    -webkit-animation-delay: 7.4s;
+    animation-delay: 7.3s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@keyframes type {
+    from {
+        width: 0;
+    }
+}
+
+@-webkit-keyframes type {
+    from {
+        width: 0;
+    }
+}
+
+span {
+    animation: blink 1s infinite;
+}
+
+@keyframes type2 {
+    0% {
+        width: 0;
+    }
+
+    from {
+        opacity: 0;
+    }
+
+    1% {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes type2 {
+    0% {
+        width: 0;
+    }
+
+    from {
+        opacity: 0;
+    }
+
+    1% {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/*------------------css-type for selection menu===========--------------------*/
+
+
+.css-type p {
+    font-family: var(--lem);
+    color: antiquewhite;
+    font-size: 24px;
+    width: 96%;
+
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-animation: type 2s steps(40, end);
+    animation: type 2s steps(40, end);
+    border-right: .15em solid rgba(233, 162, 30, 0);
+}
+
+.css-type p:nth-child(1) {
+    background-color: #444d53a8;
+    font-family: var(--pix);
+    color: rgb(255, 255, 255);
+
+}
+
+.css-type p:nth-child(2) {
+    white-space: nowrap;
+    overflow: hidden;
+    opacity: 0;
+    -webkit-animation: type 2s steps(40, end);
+    animation: type2 2s steps(40, end);
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.css-type p:nth-child(3) {
+    white-space: nowrap;
+    overflow: hidden;
+    opacity: 0;
+    -webkit-animation: type 2s steps(40, end);
+    animation: type2 2s steps(40, end);
+    -webkit-animation-delay: 4s;
+    animation-delay: 4s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.css-type p:nth-child(4) {
+    white-space: nowrap;
+    overflow: hidden;
+    opacity: 0;
+    -webkit-animation: type 2s steps(40, end);
+    animation: type2 2s steps(40, end);
+    -webkit-animation-delay: 6s;
+    animation-delay: 6s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.css-typing p:nth-child(5) {
+    white-space: nowrap;
+    overflow: hidden;
+    opacity: 0;
+    -webkit-animation: type 2s steps(40, end);
+    animation: type2 2s steps(40, end);
+    -webkit-animation-delay: 7.4s;
+    animation-delay: 7.3s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+
+
+
+
+/*---------------typwiter-----xxxxxxxxxxx---------effects-----------*/
+
+
+/* The Modal (background) */
+.modal-body {
+
+    padding: 1vw 2vw 2px 2vw;
+    background-color: #444d535e;
+
+}
+
+/*-------------------------modal content3 Specially for top---------------------*/
+
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+
+
+/*-------------------------modal 3 ends---------------------*/
+
+
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+/*-----------------------------------------------------------------------*/
+
+
+.modalstory1 {
+    display: block;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 50%;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0);
+    /* Black w/ opacity */
+}
+
+.modal-content1 {
+    position: relative;
+    background-color: #fefefe00;
+    margin: auto;
+    padding: 0;
+    text-align: left;
+    border: 1px solid rgb(83, 83, 83);
+    box-shadow: 0px -3px 3px rgb(168, 168, 168);
+    border-left: none;
+    border-right: none;
+    width: 88%;
+
+    font-size: 1.5;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+}
+
+
+.modalstory2 {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 50%;
+    /* Location of the box */
+    left: 0vw;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0);
+    /* Black w/ opacity */
+}
+
+.colink {
+    color: white;
+}
+
+.colink:hover {
+    color: #d19629;
+    text-decoration: none;
+}
+
+.modal-content2 {
+    position: relative;
+    background-color: #fefefe00;
+    margin: auto;
+    padding: 0;
+    text-align: left;
+    border: 1px solid rgb(83, 83, 83);
+    box-shadow: 0px -3px 3px rgb(168, 168, 168);
+    border-left: none;
+    border-right: none;
+    width: 88%;
+
+    font-size: 1.5;
+    -webkit-animation-name: animateleft;
+    -webkit-animation-duration: 1.8s;
+    animation-name: animateleft;
+    animation-duration: 1.8s;
+    animation-timing-function: cubic-bezier(0, 1.61, .82, 1.84);
+    -webkit-animation-timing-function: cubic-bezier(.05, .71, .61, 1.84);
+}
+
+
+
+/* Add Animation */
+@-webkit-keyframes animateleft {
+    from {
+        left: -300px;
+        opacity: 0
+    }
+
+    to {
+        left: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animateleft {
+    from {
+        left: -300px;
+        opacity: 0
+    }
+
+    to {
+        left: 0;
+        opacity: 1
+    }
+}
+
+p.cent {
+    text-align: center;
+}
+
+/*------------------------------------===================---------------------------------------*/
+
+.btn-whatever {
+
+
+    font-weight: bolder;
+
+    text-decoration: none;
+
+    animation: disslove 14.7s linear;
+    background-color: #444d53;
+
+
+    color: white;
+    border: 2px solid white;
+
+    text-align: center;
+    display: inline-block;
+    -webkit-transition-duration: 0.4s;
+    font-family: var(--pix);
+    transition-duration: 0.8s;
+    font-size: 15px;
+
+}
+
+.btn-whatever:hover {
+    color: #444d53;
+    text-decoration: none;
+
+    border: 4px solid white;
+    background-color: white;
+}
+
+
+@keyframes disslove {
+    0% {
+
+        opacity: 0;
+    }
+
+    54% {
+
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 1;
+
+    }
+
+    65% {
+
+        opacity: 0;
+    }
+
+    70% {
+        opacity: 1;
+
+    }
+
+    75% {
+
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 1;
+
+    }
+
+    85% {
+
+        opacity: 0;
+    }
+
+    90% {
+        opacity: 1;
+
+    }
+
+    95% {
+
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+
+    }
+}
+
+@keyframes disslove {
+    0% {
+
+        opacity: 0;
+    }
+
+    54% {
+
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 1;
+
+    }
+
+    65% {
+
+        opacity: 0;
+    }
+
+    70% {
+        opacity: 1;
+
+    }
+
+    75% {
+
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 1;
+
+    }
+
+    85% {
+
+        opacity: 0;
+    }
+
+    90% {
+        opacity: 1;
+
+    }
+
+    95% {
+
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+
+    }
+}
+
+.pic {
+    display: block;
+    position: relative;
+
+
+
+
+}
+
+/* animation: rotat 5s;
+    animation-timing-function: cubic-bezier(0, 1.02, .49, 1.41);*/
+#img1 {
+    position: absolute;
+    margin-left: 0;
+    margin-top: 10%;
+    width: 35vw;
+    height: auto;
+}
+
+#img2 {
+    position: absolute;
+    margin-left: 35%;
+    width: 35vw;
+    margin-top: 10%;
+    height: auto;
+}
+
+#img3 {
+    position: absolute;
+    margin-left: 70%;
+    margin-top: 10%;
+    width: 35vw;
+    height: auto;
+}
+
+.pic:hover {
+    transform: scale(1.3);
+}
+
+
+@keyframes rotat {
+    0% {
+        opacity: 0;
+        transform: rotate(180deg);
+    }
+
+    20% {
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+
+    38% {
+        transform: rotate(0deg);
+    }
+
+    40% {
+        transform: rotate(-5deg);
+    }
+
+    42% {
+        transform: rotate(5deg);
+    }
+
+    44% {
+        transform: rotate(-5deg);
+    }
+
+    46% {
+        transform: rotate(5deg);
+    }
+
+    48% {
+        transform: rotate(-5deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+
+    78% {
+        transform: rotate(0deg);
+    }
+
+    80% {
+        transform: rotate(-5deg);
+    }
+
+    82% {
+        transform: rotate(5deg);
+    }
+
+    84% {
+        transform: rotate(-5deg);
+    }
+
+    86% {
+        transform: rotate(5deg);
+    }
+
+    88% {
+        transform: rotate(-5deg);
+    }
+
+    90% {
+        transform: rotate(0deg);
+    }
+
+
+}
+
+@-webkit-keyframes rotat {
+    0% {
+        opacity: 0;
+        transform: rotate(180deg);
+    }
+
+    20% {
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+
+    38% {
+        transform: rotate(0deg);
+    }
+
+    40% {
+        transform: rotate(-5deg);
+    }
+
+    42% {
+        transform: rotate(5deg);
+    }
+
+    44% {
+        transform: rotate(-5deg);
+    }
+
+    46% {
+        transform: rotate(5deg);
+    }
+
+    48% {
+        transform: rotate(-5deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+
+    78% {
+        transform: rotate(0deg);
+    }
+
+    80% {
+        transform: rotate(-5deg);
+    }
+
+    82% {
+        transform: rotate(5deg);
+    }
+
+    84% {
+        transform: rotate(-5deg);
+    }
+
+    86% {
+        transform: rotate(5deg);
+    }
+
+    88% {
+        transform: rotate(-5deg);
+    }
+
+    90% {
+        transform: rotate(0deg);
+    }
+}
