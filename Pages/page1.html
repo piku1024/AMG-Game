@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1024">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chapter-1</title>
+
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/stylesMob.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+
+<body>
+
+    <section class="sect" id="zzzz">
+
+        <audio controls id="ado">
+
+            <source src="../Assets/backg/melodyloops-preview-battle-stations-2m30s.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <div id="baap" class="chor">
+
+            <div id="first" class="modalstory1">
+                <!-- Modal content -->
+                <div class="modal-content1">
+                    <div class="modal-body css-typing">
+                        <p>The Great War</p>
+                        &nbsp;
+                        <p>99 years since the fall of Napolean.</p>
+                        <p>99 Years since all the Great Powers fought together.</p>
+                        &nbsp;
+                        <p>In 1914, you watched the peace fall apart into the biggest</p>
+                        <p>war the world had ever seen.</p>
+                        &nbsp;
+                        <br>
+                        <br>
+
+                        <a class="btn-whatever btn-sm" id="start" href="#" role="button"> Start </a>
+                        <br>
+                    </div>
+                </div>
+            </div>
+
+            <div id="second" class="modalstory2">
+                <!-- Modal content -->
+                <div class="modal-content2">
+                    <div class="modal-body css-type">
+                        <p class="cent">Select your character</p>
+                        &nbsp;
+
+                    </div>
+                </div>
+
+                <a href="./Character1/Choice1.html"><img id="img1" class="pic" src="../Assets/char/princeTitle.png"
+                        alt="">
+                </a>
+                <a href="./Character2/Choice2.html"><img id="img2" class="pic" src="../Assets/char/indiantitle.png"
+                        alt="">
+                </a>
+                <a href="./Character3/Choice3.html"><img id="img3" class="pic" src="../Assets/char/americantitle.png"
+                        alt="">
+                </a>
+
+
+            </div>
+
+
+        </div>
+    </section>
+
+    <!------------------------xxxxxxxxxxxxxxxxxx---------------java script---------------------xxxxxxxxxxxxxxxxxx-------------------->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+        //$('section').mousemove(function (e) {
+        //    var moveX = (e.pageX * -1 / 5);
+        //    var moveY = (e.pageY * -1 / 5);
+        //    $(this).css('background-position', moveX + 'px ' + moveY + 'px ')
+        //})
+
+        //    $('section').on('click', function () {
+        //       $(this).toggleClass('clicked');
+        //   })   
+        //-------------------------========================================---------------
+
+
+
+
+
+        //-------------------
+        var time = 200;
+
+        var modal = document.getElementById('first');
+        var modal2 = document.getElementById('second');
+        var start = document.getElementById('start');
+
+        var audo = document.getElementById("ado");
+
+        var img1 = document.getElementById('img1');
+        var img2 = document.getElementById('img2');
+        var img3 = document.getElementById('img3');
+
+        var link1 = document.getElementById('lk1');
+        var link2 = document.getElementById('lk2');
+        var link3 = document.getElementById('lk3');
+
+        //$('.chor').on('click', function () {
+        //    $(this).toggleClass('clicked');
+        //})
+
+
+        start.onclick = function () {
+            modal.style.display = "none";
+            modal2.style.display = "block";
+
+            //audo.play();
+            aud.play();
+        }
+
+        window.onclick = function (event) {
+            if (event.target == link1) {
+                img1.style.display = "block";
+                img2.style.display = "none";
+                img3.style.display = "none";
+
+            }
+            if (event.target == link2) {
+                img1.style.display = "none";
+                img3.style.display = "none";
+                img2.style.display = "block";
+            }
+            if (event.target == link3) {
+                img1.style.display = "none";
+                img2.style.display = "none";
+                img3.style.display = "block";
+            }
+
+        }
+    </script>
+
+</body>
+
+</html>
